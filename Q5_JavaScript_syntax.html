@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Syntax</title>
+</head>
+
+<body>
+    <script>
+        // Variable Declarations
+        let name = "Nilesh"; // Declaring a variable 'name' and assigning it a string value
+        let age = 30; // Declaring a variable 'age' and assigning it a number
+
+        // Function Definition
+        function greet(personName) {
+            return `Hello, ${personName}!`; // Returns a greeting message using template literals
+        }
+
+        // Control Structure: Conditional
+        if (age >= 18) {
+            console.log(greet(name) + " You are an adult."); // Calls the greet function and logs the message for adults
+        } else {
+            console.log(greet(name) + " You are a minor."); // Logs a different message for minors
+        }
+
+        // Control Structure: Loop
+        for (let i = 1; i <= 5; i++) {
+            console.log(`Count: ${i}`); // Logs the current count in the loop
+        }
+
+    </script>
+
+</body>
+
+</html>

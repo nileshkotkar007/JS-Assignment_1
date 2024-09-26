@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> js function</title>
+</head>
+
+<body>
+
+    <h1>Message Generator</h1>
+    <button onclick="generateGreetings()">Generate Message</button>
+
+    <script>
+        function createGreeting(name, age) {
+            return `Hello, my name is ${name} and I am ${age} years old.`;
+        }
+
+        function generateGreetings() {
+            // Test the function with different values
+            const greetings = [
+                createGreeting("Nilesh", 22),
+                createGreeting("Kaustubh", 21),
+                createGreeting("Chaitanya", 22),
+                createGreeting("Om", 20)
+
+            ];
+
+            document.write("<h2>Generated Messages:</h2>");
+            greetings.forEach(greeting => {
+                document.write(`<p>${greeting}</p>`);
+            });
+        }
+    </script>
+
+</body>
+
+</html>

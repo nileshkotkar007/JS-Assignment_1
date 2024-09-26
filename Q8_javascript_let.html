@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS let</title>
+</head>
+
+<body>
+    <script>
+        function scopeExample() {
+            // Using 'var' to declare a variable
+            var varVariable = "I am a var variable"; // 'var' is function-scoped
+            let letVariable = "I am a let variable"; // 'let' is block-scoped
+
+            console.log("Inside the function:");
+            console.log(varVariable); // Logs the value of varVariable
+            console.log(letVariable); // Logs the value of letVariable
+
+            // Inner block
+            if (true) {
+                var varVariable = "I am redefined in a block";
+                let letVariable = "I am a new let variable";
+
+                console.log("Inside the block:");
+                console.log(varVariable);
+                console.log(letVariable);
+            }
+
+            console.log("Back to the function:");
+            console.log(varVariable); // Logs the redefined varVariable
+            console.log(letVariable); // Logs the original letVariable, not affected by the block
+        }
+
+        // Calling the function
+        scopeExample();
+
+        // Trying to access the variables outside the function
+        console.log("Outside the function:");
+        console.log(typeof varVariable); // 'varVariable' is not defined outside the function
+        console.log(typeof letVariable); // 'letVariable' is not defined outside the function
+
+    </script>
+</body>
+
+</html>

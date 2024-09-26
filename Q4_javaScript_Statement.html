@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jS statement</title>
+</head>
+<body>
+    <script>
+        // 1. Declaration: Declaring a variable using 'let'
+let message; 
+
+//  Assigning a value to the declared variable
+message = "Hello, World!"; 
+
+// 3. Function Declaration: 
+function square(num) {
+    return num * num; 
+}
+
+// 4. Conditional Statement:
+if (message.includes("Hello")) {
+    console.log("The message greets the world."); 
+} else {
+    console.log("No greeting found.");
+}
+
+// 5. Loop: Using a 'for' loop to log the squares of the first 5 numbers
+for (let i = 1; i <= 5; i++) {
+    console.log(`The square of ${i} is ${square(i)}`); 
+}
+
+    </script>
+</body>
+</html>

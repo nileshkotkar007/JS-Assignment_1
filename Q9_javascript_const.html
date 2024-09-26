@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js Const</title>
+</head>
+
+<body>
+    <script>
+        // Defining a constant value for PI
+        const PI = 3.14159;
+        console.log("The value of PI is:", PI); 
+
+        // Attempting to reassign the constant PI
+        try {
+            PI = 3.14; // This will cause an error
+        } catch (error) {
+            console.error("Error:", error.message); // Catch and log the error message
+        }
+
+        // Checking the value of PI after the attempted reassignment
+        console.log("The value of PI remains:", PI); // Should still output the original value
+
+    </script>
+</body>
+
+</html>
